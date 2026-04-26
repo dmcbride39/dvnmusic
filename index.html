@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DVN Music</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">DVN MUSIC</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tracks</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Upload</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>DVN MUSIC</h1>
+    <p>High-Tech Beats • Future Sounds</p>
+    <button onclick="document.getElementById('player').scrollIntoView()">Listen Now</button>
+  </section>
+
+  <section class="tracks" id="tracks">
+    <h2>Latest Releases</h2>
+    <div class="grid" id="music-grid"></div>
+  </section>
+
+  <section class="player" id="player">
+    <audio id="audio" controls></audio>
+    <div class="now-playing">Now Playing: <span id="song-title">Select a track</span></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
